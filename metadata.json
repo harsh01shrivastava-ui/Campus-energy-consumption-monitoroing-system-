@@ -1,0 +1,6 @@
+{
+  "name": "EcoTrack Campus Core",
+  "description": "Autonomous Campus Energy Telemetry, Room Energy Grid, Exit Walkthrough Checklists, and Sustainability Analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

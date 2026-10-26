@@ -1,0 +1,227 @@
+---
+name: Ecological Intelligence
+colors:
+  surface: '#f9f9ff'
+  surface-dim: '#cfdaf2'
+  surface-bright: '#f9f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f0f3ff'
+  surface-container: '#e7eeff'
+  surface-container-high: '#dee8ff'
+  surface-container-highest: '#d8e3fb'
+  on-surface: '#111c2d'
+  on-surface-variant: '#404943'
+  inverse-surface: '#263143'
+  inverse-on-surface: '#ecf1ff'
+  outline: '#707973'
+  outline-variant: '#bfc9c1'
+  surface-tint: '#2c694e'
+  primary: '#0f5238'
+  on-primary: '#ffffff'
+  primary-container: '#2d6a4f'
+  on-primary-container: '#a8e7c5'
+  inverse-primary: '#95d4b3'
+  secondary: '#116c4a'
+  on-secondary: '#ffffff'
+  secondary-container: '#a1f4c8'
+  on-secondary-container: '#1b724f'
+  tertiary: '#005236'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#006d48'
+  on-tertiary-container: '#89edba'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#b1f0ce'
+  primary-fixed-dim: '#95d4b3'
+  on-primary-fixed: '#002114'
+  on-primary-fixed-variant: '#0e5138'
+  secondary-fixed: '#a1f4c8'
+  secondary-fixed-dim: '#86d7ad'
+  on-secondary-fixed: '#002113'
+  on-secondary-fixed-variant: '#005236'
+  tertiary-fixed: '#92f7c3'
+  tertiary-fixed-dim: '#75daa8'
+  on-tertiary-fixed: '#002113'
+  on-tertiary-fixed-variant: '#005235'
+  background: '#f9f9ff'
+  on-background: '#111c2d'
+  surface-variant: '#d8e3fb'
+typography:
+  display-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.02em
+  display-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 30px
+    fontWeight: '700'
+    lineHeight: 38px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 30px
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+  metric-xl:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.03em
+  metric-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.02em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.04em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.02em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.25rem
+  gutter-lg: 1.75rem
+  margin: 1.25rem
+  margin-lg: 2.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.25rem
+---
+
+## Brand & Style
+
+The design system establishes an atmospheric, highly legible interface tailored for facility managers, campus sustainability officers, and institutional leaders. It balances infrastructural precision with an ecological conscience, translating complex telemetry—kilowatt-hours, thermal dissipation, occupancy loads, and solar offsets—into an effortless, calm digital environment.
+
+The aesthetic fuses **Modern Architectural Minimalism** with **Calm Dashboard Utility**. It deliberately avoids the visual clutter of legacy SCADA software and the hyper-vibrant saturation of consumer fintech. By relying on vast negative space, deliberate typographic weight variations, and naturalistic, botanical undertones, the interface instills confidence, clarity, and sustainable stewardship.
+
+Visual hierarchy relies on structural alignment rather than decorative chrome. Data tiles emerge as crisp, elevated planes over an airy, pale sage canvas, prioritizing situational awareness and swift spatial diagnostics across dormitories, lecture halls, and laboratories.
+
+## Colors
+
+The palette is anchored in an earthy, high-clarity tonal spectrum designed to minimize eye fatigue during prolonged operational monitoring sessions:
+
+- **Canvas & Backgrounds:** The base environment is framed by `#F4F6F4` (Canvas Base) and `#F8F9FA` (Sub-panel Neutral), creating an airy, light-filled foundation with an organic, low-saturation tint.
+- **Surface Elevation:** Primary cards, floor maps, and modal containers sit on pure `#FFFFFF`, granting visual separation from the tinted background through subtle value contrast rather than harsh boundaries.
+- **Primary Brand Accents:** `#2D6A4F` serves as the dominant anchor for interactive controls, primary navigations, and baseline active tabs. `#40916C` and `#52B788` provide transitional gradations for dynamic telemetry, micro-sparkline traces, and active toggle states.
+- **Typography & Structure:** High-density readouts utilize deep slate charcoal (`#1E293B`), while contextual labels, table headers, and supporting telemetry scale through `#334155` and `#64748B`.
+- **Structural Lines:** Delicately framed by `#E2E8F0` and `#E9ECEF` to construct low-noise boundaries.
+- **Operational Status Indicators:**
+  - *Normal / Optimal:* Soft Emerald (`#2E7D32` text/dot on `#E8F5E9` pill fill).
+  - *Occupied / Moderately Loaded:* Warm Amber (`#B45309` text/dot on `#FEF3C7` pill fill).
+  - *Wastage / Critical Attention:* Muted Coral-Red (`#DC2626` text/dot on `#FEE2E2` pill fill).
+
+## Typography
+
+The typography system uses Plus Jakarta Sans throughout, pairing geometric precision with subtle humanist warmth to balance scientific rigor and approachable visual balance.
+
+All telemetry numbers, metric tiles, and data tables must utilize tabular figures (`font-variant-numeric: tabular-nums`) to ensure vertical visual alignment across fluctuating wattages, temperatures, and percentage shifts. Upper-case transformation is reserved strictly for `label-md` and `label-sm` metadata tags, column headers, and status flags, pairing with expanded tracking to maintain legibility at micro dimensions.
+
+## Layout & Spacing
+
+This design system uses a fluid 12-column grid system paired with strict 4px/8px incremental rhythm units to structure telemetry grids and architectural views:
+
+- **Breakpoints & Layout Behavior:**
+  - *Mobile (< 768px):* 4-column flow. Screen margins scale down to `margin` (1.25rem), card padding tightens to `space-md`, and multi-building grids collapse into stacked vertical cards. Floor plans toggle into list-card views.
+  - *Tablet (768px - 1024px):* 8-column layout. Gutter sits at `gutter` (1.25rem), accommodating split-pane sidebar navigations and dual-column metric cards.
+  - *Desktop (> 1024px):* 12-column fixed-gutter layout expanding to maximum content bounding of 1600px. Margin scales to `margin-lg` (2.5rem), providing generous breathing room around floor plan matrices and aggregate telemetry overviews.
+- **Vertical Rhythm:** Component groupings conform strictly to spacing tokens. Sub-label associations sit at `space-xs` (0.25rem), related control groupings at `space-sm` (0.5rem), internal tile paddings at `space-lg` (1.5rem), and independent functional panels at `space-xl` (2.25rem).
+
+## Elevation & Depth
+
+Visual hierarchy uses a refined, dual-mechanism depth strategy: low-contrast tactile borders paired with soft, hyper-diffused ambient drop shadows. Surface layers are purposefully flat and non-skeuomorphic, while layered shadows produce a gentle, weightless floating feel.
+
+- **Level 0 (Canvas Base):** Flat `#F4F6F4` fill. No drop shadow, no border. Holds peripheral canvas space.
+- **Level 1 (Telemetry Cards & Floorplan Nodes):** Pure `#FFFFFF` surface accompanied by a hairline border (`1px solid #E2E8F0`) and an ambient shadow: `0px 2px 12px -2px rgba(30, 41, 59, 0.04), 0px 1px 3px 0px rgba(30, 41, 59, 0.02)`.
+- **Level 2 (Hovered Nodes & Active Filters):** Lifted slightly using `0px 8px 24px -4px rgba(30, 41, 59, 0.06), 0px 2px 6px -1px rgba(30, 41, 59, 0.03)` with border shifting to `#CBD5E1`.
+- **Level 3 (Modals, Overlays & Flyout Drawers):** `#FFFFFF` surface suspended with `0px 20px 32px -8px rgba(30, 41, 59, 0.10), 0px 4px 12px -2px rgba(30, 41, 59, 0.04)` over a translucent, tinted backdrop scrim of `rgba(30, 41, 59, 0.25)` backed by a `4px` blur filter.
+
+## Shapes
+
+The interface implements a **Rounded** shape language (`roundedness: 2`). This radius scale strikes an optimal balance between architectural structure and human-centered design:
+
+- **Base Radius (0.5rem / 8px):** Standard interactive elements, input fields, dropdown trigger buttons, tab items, and micro-metric tiles.
+- **Large Radius (`rounded-lg`, 1rem / 16px):** Primary campus telemetry cards, interactive floor plan building blocks, and chart viewports.
+- **Extra-Large Radius (`rounded-xl`, 1.5rem / 24px):** System drawers, modal dialogue containers, and floating control docks.
+- **Full Pill (`rounded-full`, 9999px):** Status chips, indicator badges, micro-dots, and circular icon triggers.
+
+## Components
+
+### Buttons
+- **Primary:** Background in `#2D6A4F`, text in `#FFFFFF`, with zero decorative gradient. Active states compress to `#1B4332`. Hover introduces a subtle scale effect (`transform: translateY(-0.5px)`). Corner radius `0.5rem`.
+- **Secondary / Ghost:** Transparent background with border `1px solid #E2E8F0`, typography `#334155`. On hover, surface becomes `#F8F9FA` with text `#1E293B`.
+- **Icon Actions:** 36x36px bounding box, border radius `0.5rem`, color `#64748B`, transitioning to `#2D6A4F` on hover.
+
+### Stat Tiles & Micro-Sparklines
+- Standard container: White surface, `1rem` radius, `1px solid #E2E8F0` border, `space-lg` padding.
+- Structure: Micro-label in `label-sm` (`#64748B`) followed by prominent primary metric in `metric-xl` (`#1E293B`).
+- Sparklines: Embedded inline SVG charts with 2px stroke width in `#40916C`, a delicate gradient fill (`rgba(64, 145, 108, 0.08)` to transparent), zero data-point dots until hovered, and vector-antialiasing.
+
+### Status Badge Pills
+- Compact geometry: Height 22px, horizontal padding 8px, border radius `9999px`.
+- Layout: 6px circular dot followed by `label-sm` weight text.
+- Variations:
+  - *Normal:* Dot `#2E7D32`, background `rgba(46, 125, 50, 0.12)`, text `#1B5E20`.
+  - *Occupied:* Dot `#D97706`, background `rgba(217, 119, 6, 0.12)`, text `#92400E`.
+  - *Wastage:* Dot `#DC2626`, background `rgba(220, 38, 38, 0.12)`, text `#991B1B`.
+
+### Interactive Floorplan / Room Grid Cards
+- Room units render as modular, flat, bordered panels inside campus zone layouts.
+- Dynamic color-wash states: Normal status retains clean `#FFFFFF` with muted boundary; Occupied incorporates a soft amber perimeter tint (`#FDE68A`); Wastage triggers a pulsing alert border (`#FCA5A5`) paired with a light coral corner beacon.
+- Displays abbreviated room designation, current power draw in kW, and occupant count.
+
+### Sleek Tabs
+- Pill-segmented style or underline modern minimal format. Segmented controls feature a `#F1F5F9` container with `0.25rem` interior padding, housing white active cards with crisp Level 1 elevation and forest green text (`#2D6A4F`). Inactive items remain muted slate (`#64748B`).
+
+### Form Inputs & Selectors
+- Background `#FFFFFF`, border `1px solid #CBD5E1`, typography `body-md` (`#1E293B`), height 40px, roundedness `0.5rem`. Focus applies an outline ring of `2px solid rgba(45, 106, 79, 0.25)` and border `#2D6A4F`.
+
+### Modals & Diagnostic Widgets
+- Centered dialogs with explicit padding (`space-xl`), `rounded-xl` geometry, high-level ambient shadow, and an integrated sticky action bar. Dismissible via top-right ghost icon or backdrop interaction.

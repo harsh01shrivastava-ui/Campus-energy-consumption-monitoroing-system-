@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"inverse-on-surface":"#ecf1ff","surface-bright":"#f9f9ff","primary":"#0f5238","on-tertiary-fixed-variant":"#005235","on-secondary-fixed":"#002113","primary-container":"#2d6a4f","error-container":"#ffdad6","on-tertiary-fixed":"#002113","tertiary":"#005236","error":"#ba1a1a","on-error-container":"#93000a","on-secondary":"#ffffff","on-tertiary-container":"#89edba","secondary-container":"#a1f4c8","inverse-surface":"#263143","on-background":"#111c2d","surface-container-lowest":"#ffffff","on-primary-fixed":"#002114","surface-container-high":"#dee8ff","on-secondary-container":"#1b724f","on-error":"#ffffff","tertiary-container":"#006d48","surface":"#f9f9ff","secondary-fixed-dim":"#86d7ad","secondary-fixed":"#a1f4c8","outline":"#707973","primary-fixed":"#b1f0ce","on-secondary-fixed-variant":"#005236","tertiary-fixed":"#92f7c3","surface-container":"#e7eeff","on-tertiary":"#ffffff","on-primary":"#ffffff","on-primary-fixed-variant":"#0e5138","inverse-primary":"#95d4b3","surface-dim":"#cfdaf2","surface-variant":"#d8e3fb","on-primary-container":"#a8e7c5","background":"#f9f9ff","primary-fixed-dim":"#95d4b3","outline-variant":"#bfc9c1","surface-tint":"#2c694e","surface-container-low":"#f0f3ff","secondary":"#116c4a","on-surface":"#111c2d","surface-container-highest":"#d8e3fb","on-surface-variant":"#404943","tertiary-fixed-dim":"#75daa8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","gutter":"1.25rem","space-xs":"0.25rem","space-xl":"2.25rem","margin-lg":"2.5rem","space-lg":"1.5rem","margin":"1.25rem","gutter-lg":"1.75rem","space-md":"1rem"},"fontFamily":{"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"metric-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"metric-xl":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"metric-md":["24px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"metric-xl":["32px",{"lineHeight":"36px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-lg px-space-md"><div class="flex flex-col gap-space-lg"><div class="flex items-center justify-between px-space-sm"><div class="flex items-center gap-space-sm"><img alt="Campus EcoTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VOqayPz7h_XCZJcesT4jxVj0FsX3tfJ8dsQb7GRyfRBW0M3ZJ98UYOeOK7aPO0NSTsWlGuWlX9ZSNe1BwROc-EAmW_9OPGgd7NIJJgDn09Saq3NOziyHA7U76rXDRS4mWlrTkesMS3QyoTXI1FT2GnN3DdQZHpE7S30_vrQQ_OYfHilar4F1IGZK7SooVt3LHq_rzodQ4DL4MztiTFJlx7qg_HY2FQ7F5ILBuhdm9sqT4NZWHtFQo5TAC7"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">EcoTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Campus Core</span></div></div><button aria-label="Collapse Navigation" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">menu_open</span></button></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="overview-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Overview Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="campus-map-rooms" href="#"><span class="material-symbols-outlined text-[20px]">domain</span><span>Campus Map &amp; Rooms</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="checklists-reports" href="#"><span class="material-symbols-outlined text-[20px]">assignment_turned_in</span><span>Checklists &amp; Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="analytics-anomalies" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span>Analytics &amp; Anomalies</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="leaderboard" href="#"><span class="material-symbols-outlined text-[20px]">trophy</span><span>Leaderboard</span></a></nav></div><div class="flex flex-col gap-space-sm"><div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Current Load</span><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary"><span class="material-symbols-outlined text-[14px]">trending_down</span>-14% avg</span></div><div class="flex items-baseline gap-space-xs"><span class="font-metric-md text-metric-md text-on-surface">42.8</span><span class="font-label-md text-label-md text-on-surface-variant">kW</span></div><div class="w-full bg-surface-container h-1.5 rounded-full mt-space-sm overflow-hidden"><div class="bg-primary h-full rounded-full" style="width: 62%"></div></div></div><div class="flex items-center justify-between px-space-sm pt-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant">Telemetry v2.4</span><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="hover:text-on-surface cursor-pointer">EcoTrack</span><span class="text-outline-variant">/</span><span class="text-on-surface font-label-md text-label-md">Main Campus Telemetry</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="w-64 lg:w-80 h-9 pl-9 pr-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-[0_1px_8px_rgba(0,0,0,0.04)]" placeholder="Search rooms, sub-meters, sensors..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Live Data • Updated 2m ago</span></div><div class="flex items-center bg-surface-container-lowest px-space-sm py-1 rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)] cursor-pointer"><span class="font-label-sm text-label-sm text-on-surface-variant mr-space-xs">Role:</span><span class="font-label-sm text-label-sm text-primary font-semibold mr-space-xs">Administrator</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><button aria-label="Notifications" class="relative w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-none">Admin Console</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Facilities Div.</span></div></div></div></header><main class="relative pt-16 w-full px-space-lg py-space-lg bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-xl">
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="inline-flex h-2 w-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Sub-Meter Node Telemetry • Zone 3</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Campus Map &amp; Room Energy Grid</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Real-time telemetry of classroom, lab, and hall occupancy &amp; appliance power draw</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="bg-surface-container-high p-1 rounded-xl flex items-center shadow-sm">
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm transition-all duration-200" id="viewToggleGrid">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>Grid View</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all duration-200" id="viewTogglePlan">
+<span class="material-symbols-outlined text-[18px]">map</span>
+<span>Schematic Floor Plan</span>
+</button>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-all" onclick="triggerGlobalEcoScan()">
+<span class="material-symbols-outlined text-[18px]">energy_savings_leaf</span>
+<span>Run Eco Audit</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Facility</span>
+<div class="relative inline-block">
+<select class="appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm pl-space-md pr-8 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer">
+<option selected="">Science Complex</option>
+<option>Engineering Block A</option>
+<option>Engineering Block B</option>
+<option>Library &amp; Admin</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<div class="h-6 w-px bg-surface-container-highest hidden sm:block mx-1"></div>
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Ground Floor</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Floor 1</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors">Floor 2</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-sm">Floor 3 (Active)</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold shadow-xs">
+            All <span class="ml-1 opacity-75">28</span>
+</button>
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Normal <span class="opacity-75">21</span>
+</button>
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#D97706]"></span>
+            Occupied <span class="opacity-75">4</span>
+</button>
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+            Needs Attention <span class="opacity-75">3</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Floor Aggregate Load</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">18.45 kW</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Unoccupied Wastage</span>
+<span class="font-label-md text-label-md text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">warning</span> 7.90 kW
+          </span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimated Daily Loss</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">$38.40 / day</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">HVAC Thermal Sync</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Eco Profile Target 23°C</span>
+</div>
+</div>
+</div>
+<div class="relative grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-8 flex flex-col gap-space-lg transition-all duration-300" id="gridSection">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="cursor-pointer group bg-surface-container-lowest p-space-lg rounded-xl shadow-md hover:shadow-xl transition-all duration-200 relative overflow-hidden ring-2 ring-error/30" onclick="openInspector('304')">
+<div class="absolute top-0 right-0 w-24 h-24 bg-error-container/40 rounded-full blur-2xl pointer-events-none -mr-8 -mt-8"></div>
+<div class="flex items-start justify-between mb-space-sm relative z-10">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono uppercase tracking-wider">Science Wing • F3</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mt-0.5">Lab 304 • Chemistry Lab</h3>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+                Wastage Alert
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm py-space-sm my-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Occupancy</span>
+<span class="font-body-md text-body-md font-semibold text-error flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">person_off</span> Empty (0)
+                </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Power Draw</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold tracking-tight">4.8 <span class="font-label-md text-label-md text-on-surface-variant">kW</span></span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-sm text-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-error">toggle_on</span>
+                  Active Loads: <strong>3 of 4 appliances</strong>
+</span>
+<span class="font-label-sm text-label-sm text-error font-medium">AC, Lights, Exhaust</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-error h-full rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span>Click to inspect &amp; remote shut off</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<div class="cursor-pointer group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all duration-200" onclick="openInspector('101')">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono uppercase tracking-wider">Science Wing • F1</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mt-0.5">Lecture Hall 101</h3>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#fef3c7] text-[#92400e] font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#d97706]"></span>
+                Occupied
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm py-space-sm my-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Occupancy</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">groups</span> 42 Students
+                </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Power Draw</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold tracking-tight">6.2 <span class="font-label-md text-label-md text-on-surface-variant">kW</span></span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-sm text-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+                  Scheduled Lecture: Organic Chem
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Full AV + AC</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full rounded-full" style="width: 74%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Scheduled until 19:30</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<div class="cursor-pointer group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all duration-200" onclick="openInspector('seminar-b')">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono uppercase tracking-wider">Science Wing • F3</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mt-0.5">Seminar Room B</h3>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Normal • Eco
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm py-space-sm my-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Occupancy</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">meeting_room</span> Empty (0)
+                </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Power Draw</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold tracking-tight">0.05 <span class="font-label-md text-label-md text-on-surface-variant">kW</span></span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-sm text-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">power_settings_new</span>
+                  Loads: All 0/4 Powered Off
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Standby Mode</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full rounded-full" style="width: 4%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Clean Sub-Meter Profile</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<div class="cursor-pointer group bg-surface-container-lowest p-space-lg rounded-xl shadow-md hover:shadow-xl transition-all duration-200 relative overflow-hidden ring-1 ring-error/20" onclick="openInspector('complab2')">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono uppercase tracking-wider">East Wing • F2</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mt-0.5">Computer Lab 2</h3>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                Needs Attention
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm py-space-sm my-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Occupancy</span>
+<span class="font-body-md text-body-md font-semibold text-error flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">person_off</span> Empty (0)
+                </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Power Draw</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold tracking-tight">3.1 <span class="font-label-md text-label-md text-on-surface-variant">kW</span></span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-sm text-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-error">desktop_windows</span>
+                  18 PCs bypass sleep mode
+                </span>
+<span class="font-label-sm text-label-sm text-error font-medium">Overhead Lights ON</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-error h-full rounded-full" style="width: 58%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Remote WOL Sleep Available</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<div class="cursor-pointer group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all duration-200" onclick="openInspector('physics1')">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono uppercase tracking-wider">Science Wing • F2</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mt-0.5">Physics Lab 1</h3>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Normal • In Session
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm py-space-sm my-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Occupancy</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">group</span> 28 Students
+                </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Power Draw</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold tracking-tight">2.4 <span class="font-label-md text-label-md text-on-surface-variant">kW</span></span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-sm text-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+                  Optimal consumption curve
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">85W / Student</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full rounded-full" style="width: 42%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sensor Health: 99.8%</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<div class="cursor-pointer group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all duration-200" onclick="openInspector('faculty2b')">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono uppercase tracking-wider">South Wing • F2</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mt-0.5">Faculty Lounge 2B</h3>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#fef3c7] text-[#92400e] font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#d97706]"></span>
+                Occupied
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm py-space-sm my-space-xs bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Occupancy</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-[#d97706]">coffee</span> 5 Staff
+                </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Power Draw</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold tracking-tight">1.8 <span class="font-label-md text-label-md text-on-surface-variant">kW</span></span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-sm text-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">microwave</span>
+                  Kitchenette + Ambient HVAC
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Standard Draw</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 32%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Night cycle arming at 21:00</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="hidden bg-surface-container-lowest p-space-lg rounded-xl shadow-sm" id="schematicView">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Architectural Zone Schematic (Floor 3)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Spatial placement of sub-meters, smart circuit breakers, and thermal sensors</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-error"><span class="w-2.5 h-2.5 rounded bg-error/30 inline-block"></span> High Drain</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-[#92400e]"><span class="w-2.5 h-2.5 rounded bg-[#fef3c7] inline-block"></span> Moderate</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary"><span class="w-2.5 h-2.5 rounded bg-secondary-container inline-block"></span> Idle</span>
+</div>
+</div>
+<div class="w-full h-80 bg-surface-container-low rounded-xl relative p-4 overflow-hidden flex flex-col justify-between">
+<svg class="absolute inset-0 w-full h-full opacity-40 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="30" id="cad-grid" patternunits="userSpaceOnUse" width="30">
+<path class="text-outline-variant" d="M 30 0 L 0 0 0 30" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#cad-grid)" height="100%" width="100%"></rect>
+</svg>
+<div class="relative z-10 grid grid-cols-12 gap-3 h-full">
+<div class="col-span-5 bg-error-container/30 border-2 border-dashed border-error p-3 rounded-lg flex flex-col justify-between cursor-pointer hover:bg-error-container/50 transition-colors" onclick="openInspector('304')">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-error-container">LAB 304</span>
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+</div>
+<div class="text-center">
+<span class="font-metric-md text-metric-md font-bold text-error">4.8 kW</span>
+<p class="font-label-sm text-label-sm text-on-error-container">Empty / Full HVAC Draw</p>
+</div>
+<span class="font-label-sm text-label-sm text-error text-right">Click to isolate</span>
+</div>
+<div class="col-span-4 flex flex-col gap-3">
+<div class="flex-1 bg-secondary-container/30 border border-dashed border-secondary p-2.5 rounded-lg flex items-center justify-between cursor-pointer hover:bg-secondary-container/50 transition-colors">
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">SEMINAR B</span>
+<p class="font-label-sm text-label-sm text-secondary">0.05 kW • Standby</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<div class="flex-1 bg-surface-container-high/60 border border-dashed border-outline-variant p-2.5 rounded-lg flex items-center justify-between cursor-pointer">
+<div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">FACULTY OFFICE 312</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">0.42 kW • Normal</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">meeting_room</span>
+</div>
+</div>
+<div class="col-span-3 bg-surface-container-high/40 border border-dashed border-outline-variant p-3 rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">STAIRWELL &amp; CORRIDOR</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">lightbulb</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">PIR Daylight Sensor: Dimmed to 30%</p>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">0.18 kW</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">energy_program_saving</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Automated Evening Load Shedding</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Scheduled policy will remotely cut idle auxiliary circuits across 14 vacant rooms in 45 minutes.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors">Adjust Schedule</button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-colors">Execute Now</button>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-lg relative flex flex-col gap-space-lg transition-all duration-300" id="inspectorPanel">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-mono text-on-surface-variant tracking-wider">Device Diagnostic Drawer</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-0.5" id="inspectorTitle">Lab 304 • Science Wing Floor 3</h2>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+                Unoccupied Wastage Detected
+              </span>
+</div>
+</div>
+<button aria-label="Close Inspector" class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="minimizeInspector()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Cumulative Power Draw</span>
+<span class="font-metric-xl text-metric-xl font-bold text-on-surface tracking-tight" id="inspectorTotalDraw">4,800 <span class="text-headline-sm font-normal text-on-surface-variant">Watts</span></span>
+</div>
+<div class="h-10 w-10 rounded-full bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Appliance Telemetry &amp; Controls</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Smart Breaker Bank #04</span>
+</div>
+<div class="bg-surface-container-low/70 p-space-sm rounded-lg flex items-center justify-between gap-space-sm transition-all" id="applianceRow1">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface">Ceiling Lights (Zone A &amp; B)</h5>
+<span class="font-label-sm text-label-sm text-error font-semibold" id="lightPowerText">640 Watts • Unnecessary</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-error text-on-error font-label-sm text-label-sm font-medium hover:opacity-90 shadow-sm transition-all" onclick="toggleAppliance('lights', this)">
+                Turn Off
+              </button>
+</div>
+</div>
+<div class="bg-surface-container-low/70 p-space-sm rounded-lg flex flex-col gap-2 transition-all" id="applianceRow2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">ac_unit</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface">HVAC / Air Conditioning</h5>
+<span class="font-label-sm text-label-sm text-error font-semibold" id="hvacPowerText">3,200 Watts • Set to 19°C</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-1.5 pl-11">
+<button class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-medium hover:bg-primary transition-colors flex items-center gap-1 shadow-sm" onclick="adjustHvacEco(this)">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+                Eco Adjust (24°C)
+              </button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-medium hover:bg-surface-container-high transition-colors" onclick="toggleAppliance('hvac', this)">
+                Turn Off
+              </button>
+</div>
+</div>
+<div class="bg-surface-container-low/70 p-space-sm rounded-lg flex items-center justify-between gap-space-sm transition-all" id="applianceRow3">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">co_present</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface">Interactive Smart Board &amp; Projector</h5>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">0 Watts • In Standby</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-2 py-0.5 rounded bg-surface-container">OFF</span>
+</div>
+<div class="bg-surface-container-low/70 p-space-sm rounded-lg flex items-center justify-between gap-space-sm transition-all" id="applianceRow4">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">mode_fan</span>
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-on-surface">Ventilation &amp; Fume Hoods</h5>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">960 Watts • Lab Safety Mandate</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold px-2 py-0.5 rounded bg-surface-container">Locked</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase text-on-surface-variant">Recent Activity Audit</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">history</span>
+</div>
+<div class="relative pl-4 flex flex-col gap-2 text-body-sm text-body-sm text-on-surface-variant">
+<div class="relative before:absolute before:-left-3 before:top-1.5 before:w-1.5 before:h-1.5 before:rounded-full before:bg-outline-variant">
+<span>Class representative marked room vacant at <strong>17:15</strong></span>
+</div>
+<div class="relative before:absolute before:-left-3 before:top-1.5 before:w-1.5 before:h-1.5 before:rounded-full before:bg-outline-variant">
+<span>Cleaning staff badge-in registered at <strong>18:00</strong> (lights remained on)</span>
+</div>
+<div class="relative before:absolute before:-left-3 before:top-1.5 before:w-1.5 before:h-1.5 before:rounded-full before:bg-error">
+<span class="text-error font-medium">Anomaly flagged by EcoWatch algorithm at <strong>18:30</strong></span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-2.5 px-space-md rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container shadow-sm flex items-center justify-center gap-2 transition-all" onclick="remoteEcoShutdown()">
+<span class="material-symbols-outlined text-[18px]">power_settings_new</span>
+<span>Remote Eco Shutdown</span>
+</button>
+<button class="w-full py-2 px-space-md rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-high flex items-center justify-center gap-2 transition-colors" onclick="sendMaintenanceAlert()">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span>Send Maintenance Alert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function openInspector(roomId) {
+    const inspector = document.getElementById('inspectorPanel');
+    const title = document.getElementById('inspectorTitle');
+    const draw = document.getElementById('inspectorTotalDraw');
+
+    if (roomId === '304') {
+      title.innerText = 'Lab 304 • Science Wing Floor 3';
+      draw.innerHTML = '4,800 <span class="text-headline-sm font-normal text-on-surface-variant">Watts</span>';
+    } else if (roomId === '101') {
+      title.innerText = 'Lecture Hall 101 • Science Wing Floor 1';
+      draw.innerHTML = '6,200 <span class="text-headline-sm font-normal text-on-surface-variant">Watts</span>';
+    } else if (roomId === 'complab2') {
+      title.innerText = 'Computer Lab 2 • East Wing Floor 2';
+      draw.innerHTML = '3,100 <span class="text-headline-sm font-normal text-on-surface-variant">Watts</span>';
+    } else {
+      title.innerText = 'Room Inspector • Room ' + roomId;
+      draw.innerHTML = '1,200 <span class="text-headline-sm font-normal text-on-surface-variant">Watts</span>';
+    }
+
+    inspector.classList.remove('opacity-40', 'pointer-events-none');
+    inspector.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function minimizeInspector() {
+    const inspector = document.getElementById('inspectorPanel');
+    inspector.classList.toggle('hidden');
+  }
+
+  function toggleAppliance(type, btn) {
+    if (type === 'lights') {
+      const text = document.getElementById('lightPowerText');
+      text.innerText = '0 Watts • Turned Off';
+      text.className = 'font-label-sm text-label-sm text-secondary font-semibold';
+      btn.innerText = 'Turn On';
+      btn.className = 'px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-medium hover:bg-surface-container-high';
+      updateTotal(640);
+    } else if (type === 'hvac') {
+      const text = document.getElementById('hvacPowerText');
+      text.innerText = '0 Watts • Fan Standby';
+      text.className = 'font-label-sm text-label-sm text-secondary font-semibold';
+      btn.innerText = 'Turn On';
+      updateTotal(3200);
+    }
+  }
+
+  function adjustHvacEco(btn) {
+    const text = document.getElementById('hvacPowerText');
+    text.innerText = '1,450 Watts • Eco Setpoint (24°C)';
+    text.className = 'font-label-sm text-label-sm text-secondary font-semibold';
+    btn.innerHTML = '<span class="material-symbols-outlined text-[14px]">done</span> Saved 1.75 kW';
+    btn.disabled = true;
+    updateTotal(1750);
+  }
+
+  function updateTotal(savedAmount) {
+    const draw = document.getElementById('inspectorTotalDraw');
+    const current = 4800 - savedAmount;
+    draw.innerHTML = Math.max(960, current) + ' <span class="text-headline-sm font-normal text-on-surface-variant">Watts</span>';
+  }
+
+  function remoteEcoShutdown() {
+    const draw = document.getElementById('inspectorTotalDraw');
+    draw.innerHTML = '960 <span class="text-headline-sm font-normal text-on-surface-variant">Watts (Safety Only)</span>';
+    const lightText = document.getElementById('lightPowerText');
+    const hvacText = document.getElementById('hvacPowerText');
+    lightText.innerText = '0 Watts • Automatically Shed';
+    lightText.className = 'font-label-sm text-label-sm text-secondary font-semibold';
+    hvacText.innerText = '0 Watts • Night Standby';
+    hvacText.className = 'font-label-sm text-label-sm text-secondary font-semibold';
+    alert('Remote shutdown command dispatched. Lab 304 reduced to minimum safety load (960W).');
+  }
+
+  function sendMaintenanceAlert() {
+    alert('Dispatch notification sent to Facilities & Janitorial Supervisor for Science Wing Floor 3.');
+  }
+
+  function triggerGlobalEcoScan() {
+    alert('Initiating real-time telemetry scan across all 28 circuits on Science Complex Floor 3...');
+  }
+
+  document.getElementById('viewTogglePlan').addEventListener('click', function() {
+    document.getElementById('schematicView').classList.remove('hidden');
+    this.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    this.classList.remove('text-on-surface-variant');
+    
+    const gridBtn = document.getElementById('viewToggleGrid');
+    gridBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    gridBtn.classList.add('text-on-surface-variant');
+  });
+
+  document.getElementById('viewToggleGrid').addEventListener('click', function() {
+    document.getElementById('schematicView').classList.add('hidden');
+    this.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    this.classList.remove('text-on-surface-variant');
+    
+    const planBtn = document.getElementById('viewTogglePlan');
+    planBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    planBtn.classList.add('text-on-surface-variant');
+  });
+</script></main></div></body></html>
