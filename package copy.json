@@ -1,0 +1,9 @@
+{
+  "name": "campus-energy-monitor-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix Campus-energy-consumption-monitoroing-system- run dev",
+    "build": "npm --prefix Campus-energy-consumption-monitoroing-system- run build",
+    "preview": "npm --prefix Campus-energy-consumption-monitoroing-system- run preview"
+  }
+}
